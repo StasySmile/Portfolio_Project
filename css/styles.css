@@ -77,6 +77,20 @@ p {
 .link-icon:hover {
   color: var(--highlight-color);
 }
+.about-display {
+  margin-top: 100px;
+  padding: 100px 100px;
+}
+.about-me {
+  margin-bottom: 40px;
+}
+.portrait-img {
+  max-height: 425px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
+  display: block;
+  margin: auto;
+}
 @media (max-width: 900px) {
   body {
     max-width: 90%;
@@ -109,6 +123,17 @@ p {
   }
   .project-info {
     padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  .about-display {
+    padding: 50px 20px;
+    margin: 60px 0 0 0;
+    align-items: center;
+  }
+  .portrait-img {
+    margin-top: 20px;
+  }
+  .about-me {
     margin-bottom: 20px;
   }
 }
