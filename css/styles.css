@@ -153,4 +153,9 @@ p {
   .about-me {
     margin-bottom: 20px;
   }
+  .contact {
+    text-align: left;
+    align-items: flex-start;
+    padding: 0 60px;
+  }
 }
