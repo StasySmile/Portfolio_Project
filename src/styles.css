@@ -16,9 +16,15 @@ body {
 }
 .logo {
   max-width: 50px;
+  order: 0;
 }
 nav {
-  padding: 10px 100px;
+  background-color: var(--primary-color);
+  padding: 5px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 nav a {
   text-decoration: none;
@@ -32,13 +38,22 @@ nav a:hover {
 }
 .active {
   color: var(--accent-color);
-  pointer-events: none;
 }
 nav,
-nav ul {
+.menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.toggle {
+  font-size: 16px;
+  display: none;
+}
+.item {
+  order: 1;
+  position: relative;
+  display: block;
+  width: auto;
 }
 nav ul {
   align-items: center;
@@ -146,10 +161,52 @@ p {
     max-width: 90%;
     text-align: center;
   }
+  nav {
+    display: block;
+    padding: 3px 20px;
+  }
+  .logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 3px 0 0 20px;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  .menu li a {
+    display: block;
+    padding: 10px 0;
+    margin: 0;
+  }
+  .toggle {
+    order: 1;
+    font-size: 20px;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 3px 20px 0 0;
+  }
+  .item {
+    order: 2;
+    width: 100%;
+    display: none;
+  }
+  .open .item {
+    display: block;
+  }
   .hero {
     padding: 50px 20px;
     margin: 60px 0 0 0;
     align-items: center;
+  }
+  .scroll {
+    margin-top: 200px;
   }
   h1 {
     font-size: 1.4rem;
@@ -189,6 +246,6 @@ p {
   .contact {
     text-align: left;
     align-items: flex-start;
-    padding: 0 60px;
+    padding: 55px 60px;
   }
 }

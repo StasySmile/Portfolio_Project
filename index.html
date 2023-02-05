@@ -18,25 +18,30 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/src/styles.css" />
     <script
       src="https://kit.fontawesome.com/8afa63d3d7.js"
       crossorigin="anonymous"
     ></script>
     <title>Anastasiia Polieshko | Portfolio</title>
-    <link rel="icon" type="image/" href="/img/logo.png" />
+    <link rel="icon" type="image/" href="/src/img/logo.png" />
   </head>
   <body>
     <nav>
-      <img class="logo" src="img/logo.png" alt="" />
-      <ul>
-        <li ><a class="active" href="/">Home</a></li>
-        <li><a href="/#check_my_work">Work</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+      <a href="/"
+        ><img class="logo" src="/src/img/logo.png" alt="Anastasiia logo"
+      /></a>
+      <ul class="menu">
+        <li class="item"><a class="active" href="/">Home</a></li>
+        <li class="item"><a href="/#check_my_work">Work</a></li>
+        <li class="item"><a href="/about.html">About</a></li>
+        <li class="item"><a href="/contact.html">Contact</a></li>
+        <li class="toggle">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </li>
       </ul>
     </nav>
-    <div class="hero">
+    <div class="hero move">
       <p>Hello! I am</p>
       <h1>Anastasiia Polieshko</h1>
       <h2>Front-End Developer based in Ukraine</h2>
@@ -49,7 +54,7 @@
       <div class="row project-unit">
         <div class="col d-none d-lg-block">
           <img
-            src="/img/support-ukraine.jpg"
+            src="/src/img/support-ukraine.jpg"
             alt="Support Ukraine page view"
             class="img-fluid project-img"
           />
@@ -101,12 +106,13 @@
         </div>
         <div class="col d-none d-lg-block">
           <img
-            src="/img/weather-app.jpg"
+            src="/src/img/weather-app.jpg"
             alt="Weather app page view"
             class="img-fluid project-img"
           />
         </div>
       </div>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>

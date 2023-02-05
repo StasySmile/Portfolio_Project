@@ -18,16 +18,30 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/src/styles.css" />
     <script
       src="https://kit.fontawesome.com/8afa63d3d7.js"
       crossorigin="anonymous"
     ></script>
     <title>Anastasiia Polieshko | About</title>
-    <link rel="icon" type="image/" href="/img/logo.png" />
+    <link rel="icon" type="image/" href="/src/img/logo.png" />
   </head>
   <body>
-    <div class="container">
+    <nav>
+      <a href="/"
+        ><img class="logo" src="/src/img/logo.png" alt="Anastasiia logo"
+      /></a>
+      <ul class="menu">
+        <li class="item"><a href="/">Home</a></li>
+        <li class="item"><a href="/#check_my_work">Work</a></li>
+        <li class="item"><a class="active" href="/about.html">About</a></li>
+        <li class="item"><a href="/contact.html">Contact</a></li>
+        <li class="toggle">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container move">
       <div class="row about-display">
         <div class="col-lg-6">
           <h2>Hi, I am Anastasiia Polieshko</h2>
@@ -41,12 +55,13 @@
         </div>
         <div class="col-lg-6">
           <img
-            src="/img/portrait.jpg"
+            src="/src/img/portrait.jpg"
             alt="Portrait of Anastasiia Polieshko"
             class="img-fluid portrait-img"
           />
         </div>
       </div>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
