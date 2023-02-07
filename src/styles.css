@@ -15,12 +15,12 @@ body {
   max-width: 80%;
 }
 .logo {
-  max-width: 50px;
+  max-width: 42px;
   order: 0;
 }
 nav {
   background-color: var(--primary-color);
-  padding: 5px 100px;
+  padding: 5px 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -31,6 +31,7 @@ nav a {
   color: black;
   font-family: var(--main-font-family);
   font-weight: 600;
+  font-size: 1rem;
   margin-left: 30px;
 }
 nav a:hover {
@@ -66,7 +67,7 @@ nav ul {
   justify-content: center;
   padding: 100px 260px;
   margin-top: 140px;
-  margin-bottom: 170px;
+  margin-bottom: 150px;
 }
 h1,
 h2,
@@ -101,7 +102,7 @@ p {
 }
 .projects-display {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .project-img {
   max-height: 250px;
@@ -114,7 +115,7 @@ p {
   margin-bottom: 20px;
 }
 .project-info {
-  padding: 50px 20px;
+  padding: 40px 20px;
 }
 .links {
   margin-top: 20px;
@@ -126,8 +127,8 @@ p {
   color: var(--highlight-color);
 }
 .about-display {
-  margin-top: 100px;
-  padding: 100px 100px;
+  margin-top: 70px;
+  padding: 100px;
 }
 .about-me {
   margin-bottom: 40px;
@@ -138,6 +139,15 @@ p {
   border: 1px solid var(--accent-color);
   display: block;
   margin: auto;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 100px 260px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .contact-block {
   margin: 10px 0 10px;
@@ -156,6 +166,25 @@ p {
 .contact-icon {
   color: var(--highlight-color);
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+  color: var(--accent-color);
+}
+footer a,
+footer i {
+  line-height: 1;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+footer a:hover,
+footer i:hover {
+  color: var(--highlight-color);
+}
+
 @media (max-width: 900px) {
   body {
     max-width: 90%;
@@ -200,10 +229,15 @@ p {
   .open .item {
     display: block;
   }
-  .hero {
+  .hero,
+  .contact,
+  .about-display {
     padding: 50px 20px;
     margin: 60px 0 0 0;
     align-items: center;
+  }
+  .container {
+    max-width: 100%;
   }
   .scroll {
     margin-top: 200px;
@@ -232,20 +266,14 @@ p {
     padding: 20px 0;
     margin-bottom: 20px;
   }
-  .about-display {
-    padding: 50px 20px;
-    margin: 60px 0 0 0;
-    align-items: center;
-  }
   .portrait-img {
     margin-top: 20px;
   }
   .about-me {
     margin-bottom: 20px;
   }
-  .contact {
-    text-align: left;
-    align-items: flex-start;
-    padding: 55px 60px;
+  footer {
+    justify-content: center;
+    flex-direction: column;
   }
 }

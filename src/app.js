@@ -1,6 +1,7 @@
 let toggle = document.querySelector(".toggle");
 let menu = document.querySelector(".menu");
 let move = document.querySelector(".move");
+
 function toggleMenu() {
   if (menu.classList.contains("open")) {
     menu.classList.remove("open");
